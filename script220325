@@ -25,7 +25,7 @@
     gg.toast("■■■■■■■□□□70%")
     gg.sleep(200)
     gg.toast("■■■■■■■□□□70%")
-    gg.sleep(200)
+    gg.sleep(200)  
     gg.toast("■■■■■■■■□□80%")
     gg.sleep(200)
     gg.toast("■■■■■■■■□□80%")
@@ -38,7 +38,7 @@
     gg.sleep(200)
     gg.toast("✓LOADING SUKSES FULL✓ ")
     function checkDate()
-      if os.date("%Y%m%d") >= "20250331" then
+      if os.date("%Y%m%d") >= "20250325" then
         local hsd = gg.alert("Script hết hạn , vui lòng vào ytb: KAV EXPENSIVE update !") os.exit() 
       end
     end
