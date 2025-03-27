@@ -131,7 +131,7 @@ end
       "◽EMOTE Súng ",
       "◽EMOTE [ UPDATE (10)]",
       "◽EMOTE [ UPDATE (9)]",
-      "◽AIM , AIM ống ngắm",
+      "◽AIM AWM,M82b",
       "◽Vào tiến trình Ghost",
       "◽Antena mini",
       "◽Antena Đầu",
@@ -330,28 +330,7 @@ LoadColorValues()
         EditValue({Antena2, "h 7D 6C 04 3E 51 EE CB BE 00 00 DA 42"})
       end
 
-    function DarkSky_GreenBody()
-      A = "h A1 45 C6 BF"
-      R = "h 00 00 00 00"
-      G = "h 03 40 70 40"
-      B = "h 00 00 00 00"
-            KAVScriptRun(ColorAddress, 16, A)
-            KAVScriptRun(AddressRed, 16, R)
-            KAVScriptRun(AddressGreen, 16, G)
-            KAVScriptRun(AddressBlue , 16, B)
-
-
-            gg.setRanges(gg.REGION_CODE_APP)
-            gg.searchNumber("0.99;0.57735025883;1e-6::13", gg.TYPE_FLOAT)
-            gg.refineNumber("1e-6", gg.TYPE_FLOAT)
-            gg.getResultsCount()
-            gg.getResults(0)
-            gg.editAll("-1", gg.TYPE_FLOAT)
-            gg.clearResults()
-            gg.toast("🔊 Feature Activated! 🎮")
-            gg.toast("🌙 Night Mode Activated")
-
-    end
+    
 
   function MENUGUN()
     _ENV3 = gg["choice"]({        "︻┳═一 Skin AK 2JT︻┳═一",        "︻┳═一 Skin SCAR 2JT︻┳═一",        "︻┳═一 Skin [ BUG ] MP40 2JT︻┳═一",        "︻┳═一 Skin [ BUG ] SG 2JT︻┳═一",        "︻┳═一 Skin XM8 2JT︻┳═一",        "︻┳═一 Skin UMP 2JT︻┳═一",        "︻┳═一 Skin FAMAS 2JT︻┳═一",        "︻┳═一 Skin MP5 2JT︻┳═一",        "︻┳═一 M1887 INCEDIUM BURST︻┳═一",        "︻┳═一 M1887 SOLARIS BURST︻┳═一",        "︻┳═一 M1887 AQUA BURST︻┳═一",        "︻┳═一 M1887 TERRANO BURST︻┳═一",        "︻┳═一 M1887 REAPER︻┳═一",        "︻┳═一 M1887 OPM︻┳═一",        "︻┳═一 M1887 PARROT︻┳═一",        "︻┳═一 M1887 HAND HOPE︻┳═一",        "︻┳═一 M1887 WINTERLAND︻┳═一",        "︻┳═一 Skin AN94 2JT︻┳═一",        "︻┳═一 Skin AC80 2JT︻┳═一",        "︻┳═一 Skin TINJU 2JT︻┳═一",        "︻┳═一 Skin M1887 2JT︻┳═一",        "︻┳═一 AK ZOMBIE︻┳═一",        "︻┳═一 SCAR ZOMBIE︻┳═一",        "︻┳═一 M60 ZOMBIE︻┳═一",        "︻┳═一 M429 ZOMBIE︻┳═一",        "︻┳═一 TINJU FROSTFIRE︻┳═一",        "︻┳═一 AWM FROSTFIRE︻┳═一",        "︻┳═一 M4A1 SUNRISE REALM︻┳═一",        "︻┳═一 GLOWALL LEVEL 90︻┳═一",        "︻┳═一 KATANA JUSTICE WINGS︻┳═一",        "︻┳═一 KATANA TRAP CHROMATIC︻┳═一",        "︻┳═一 KATANA MIRACULOUS︻┳═一",        "︻┳═一 Skin THOMPSON 2JT︻┳═一",        "︻┳═一 Skin M4A1 2JT︻┳═一",        "︻┳═一 Skin GROZA 2JT︻┳═一",        "︻┳═一 Skin MP40 CHROMATIC 2JT︻┳═一",        "︻┳═一 Skin M1014 SCORPIO 2JT︻┳═一",        "︻┳═一 Skin G18 2JT︻┳═一",        "     ❌Thoát❌"
@@ -962,12 +941,6 @@ LoadColorValues()
     gg.refineNumber("0", gg.TYPE_DWORD)
     gg.getResults(1)
     gg.editAll("-99", gg.TYPE_DWORD)
-    gg.clearResults()  
-    gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
-    gg.searchNumber("h 00 00 00 3F 00 00 80 3E 00 00 00 00 05 00 00 00 00 00 80 3F 00 00 20 41 00 00 34 42 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 3F 33 33 33 3F 9A 99 99 3F 00 00 80 3F 00 00 00 00 00 00 80 3F CD CC 4C 3F 00 00 80 3F 00 00 00 00 00 00 00 00 00 00 00 00 3F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 3F 00 00 80 3F 00 00 80 3F", gg.TYPE_BYTE)
-    gg.getResults(100)
-    gg.editAll("h 00 00 00 0A 00 00 80 0C", gg.TYPE_BYTE)
-    gg.toast("✅Đã Bật AIM ✅")
     gg.clearResults()  
 
     end
