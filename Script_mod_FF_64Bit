@@ -38,7 +38,7 @@
     gg.sleep(200)
     gg.toast("✓LOADING SUKSES FULL✓ ")
     function checkDate()
-      if os.date("%Y%m%d") >= "20250403" then
+      if os.date("%Y%m%d") >= "20250409" then
         local hsd = gg.alert("Script hết hạn , vui lòng vào ytb: KAV EXPENSIVE update !") os.exit() 
       end
     end
@@ -138,7 +138,7 @@ end
        "◽Đổi súng nhanh",
       "◽Thoát Script 👈"
     }, nil,os["date"](
-    " Share by KAV EXPENSIVE \n------------------------\n Hôm nay: Ngày %d Tháng %m Năm %Y \n Bây giờ: %H:%M \n Hạn sử dụng: 03/04/2025\n"))
+    " Share by KAV EXPENSIVE \n------------------------\n Hôm nay: Ngày %d Tháng %m Năm %Y \n Bây giờ: %H:%M \n Hạn sử dụng: 09/04/2025\n"))
     if MENU == nil then
     else
       if MENU == 1 then checkDate()
